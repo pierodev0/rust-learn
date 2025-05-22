@@ -1,3 +1,5 @@
+// use std::io;
+
 // fn main(){
 //     let mut x = 5;
 //     println!("The value of x is: {x}");
@@ -21,13 +23,11 @@
 //     let number: u8 = 255;
 // }
 
-
 // El tipo caracter
 // fn main() {
 //     let c = "c";
 //     let z = "Z"; // With explicit type annotation
 // }
-
 
 //El tipo tupla
 // fn main(){
@@ -39,17 +39,48 @@
 // }
 
 // EL TIPO ARREGLO
-fn main(){
-    let numbers = [1,2,3,4,5];
+// fn main(){
+//     let numbers = [1,2,3,4,5];
+//
+//     let months = ["January","February","March","April","May", "June", "August", "September","October","November","December"];
+//
+//     //el tipo de cada elemento y su longitud
+//     let a: [i32;5] = [1,2,3,4,5];
+//
+//     let a = [3;5]; // Es lo mismo que let a = [3,3,3,3,3];
+//
+//
+//     //Acceder a los elementos de los arreglos
+//     let first = numbers[0];
+// }
 
-    let months = ["January","February","March","April","May", "June", "August", "September","October","November","December"];
+// fn main(){
+//     let a = [1,2,3,4,5];
+//
+//     println!("Please enter an array index.");
+//
+//     let mut index = String::new();
+//
+//     io::stdin()
+//         .read_line(& mut index)
+//         .expect("Failed to read line");
+//
+//     let index: usize = index
+//         .trim()
+//         .parse()
+//         .expect("Index entered was not a number");
+//
+//     let element = a[index];
+//
+//     println!("The value of the element at index {index} is: {element}");
+// }
 
-    //el tipo de cada elemento y su longitud
-    let a: [i32;5] = [1,2,3,4,5];
+//---------------FUNCIONES ----------------------
+fn main() {
+    println!("Hello, world");
 
-    let a = [3;5]; // Es lo mismo que let a = [3,3,3,3,3];
-
-
-    //Acceder a los elementos de los arreglos
-    let first = numbers[0];
+    another_function();
+}
+fn another_function(){
+    println!("Another funcion");
 }
